@@ -1,14 +1,22 @@
 {
   "name": "@opt-tech/gtm-json-converter",
+  "description": "Google Tag Manager がエクスポートした JSON をエクセルで開ける CSV に変換します",
   "version": "0.0.0-development",
   "license": "MIT",
   "bin": {
     "gtm-json-converter": "bin/index.js"
   },
+  "bugs": {
+    "url": "https://github.com/opt-tech/gtm-json-converter/issues"
+  },
   "devDependencies": {
     "nodemon": "1.18.10",
     "prettier": "1.16.4",
     "prettier-plugin-packagejson": "1.0.0"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
   },
   "engines": {
     "node": ">= 10",
@@ -18,9 +26,21 @@
     "bin",
     "lib"
   ],
+  "homepage": "https://github.com/opt-tech/gtm-json-converter#readme",
+  "keywords": [
+    "converter",
+    "csv",
+    "excel",
+    "gtm",
+    "json"
+  ],
   "main": "lib",
   "publishConfig": {
     "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/opt-tech/gtm-json-converter.git"
   },
   "scripts": {
     "prettier-base": "prettier --ignore-path .gitignore \"**/*.{js,json,md}\"",
