@@ -1,0 +1,33 @@
+{
+  "name": "@opt-tech/gtm-json-converter",
+  "version": "0.0.0-development",
+  "license": "MIT",
+  "bin": {
+    "gtm-json-converter": "bin/index.js"
+  },
+  "devDependencies": {
+    "nodemon": "1.18.10",
+    "prettier": "1.16.4",
+    "prettier-plugin-packagejson": "1.0.0"
+  },
+  "engines": {
+    "node": ">= 10",
+    "npm": ">= 6.4"
+  },
+  "files": [
+    "lib"
+  ],
+  "main": "lib",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "prettier-base": "prettier --ignore-path .gitignore \"**/*.{js,json,md}\"",
+    "lint": "npm run prettier-base -- -c",
+    "format": "npm run prettier-base -- --write",
+    "dev": "nodemon test",
+    "pretest": "npm run lint",
+    "test": "node test",
+    "start": "node bin"
+  }
+}

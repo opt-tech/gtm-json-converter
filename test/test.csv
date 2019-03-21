@@ -1,0 +1,23 @@
+﻿"ID","名前","タグ","document.write","トリガー"
+"0","Tag 0","Tag body","サポートする","Trigger 10
+  WINDOW_LOADED
+  {{Page URL}} STARTS_WITH https://example.com/foo"
+"1","Tag 1","Tag body","","Trigger 11
+  WINDOW_LOADED
+  {{Page URL}} EQUALS https://example.com/foo"
+"2","Tag 2","Tag body","","Trigger 12
+  WINDOW_LOADED
+  {{Page URL}} STARTS_WITH https://example.com/bar
+Trigger 13
+  WINDOW_LOADED
+  {{Page URL}} EQUALS https://example.com/bar"
+"3","Tag 3","Tag body","","Trigger 13
+  WINDOW_LOADED
+  {{Page URL}} EQUALS https://example.com/bar
+Trigger 14
+  DOM_READY
+  {{ID 要素}} CONTAINS foo
+Trigger 15
+  DOM_READY
+  {{ID 要素}} CONTAINS bar"
+"4","Tag 4","Tag body","",""

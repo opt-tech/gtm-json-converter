@@ -1,0 +1,319 @@
+{
+  "exportFormatVersion": 2,
+  "exportTime": "1970-01-01 00:00:00",
+  "containerVersion": {
+    "path": "accounts/9999999999/containers/99999999/versions/0",
+    "accountId": "9999999999",
+    "containerId": "99999999",
+    "containerVersionId": "0",
+    "container": {
+      "path": "accounts/9999999999/containers/99999999",
+      "accountId": "9999999999",
+      "containerId": "99999999",
+      "name": "example.com",
+      "publicId": "GTM-AAAAAAA",
+      "usageContext": ["WEB"],
+      "fingerprint": "1500000000000",
+      "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/9999999999/containers/99999999/workspaces?apiLink=container"
+    },
+    "tag": [
+      {
+        "accountId": "9999999999",
+        "containerId": "99999999",
+        "tagId": "0",
+        "name": "Tag 0",
+        "type": "html",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "Tag body"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "supportDocumentWrite",
+            "value": "true"
+          }
+        ],
+        "fingerprint": "1500000000000",
+        "firingTriggerId": ["10"],
+        "tagFiringOption": "ONCE_PER_EVENT"
+      },
+      {
+        "accountId": "9999999999",
+        "containerId": "99999999",
+        "tagId": "1",
+        "name": "Tag 1",
+        "type": "html",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "Tag body"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "supportDocumentWrite",
+            "value": "false"
+          }
+        ],
+        "fingerprint": "1500000000000",
+        "firingTriggerId": ["11"],
+        "tagFiringOption": "ONCE_PER_EVENT"
+      },
+      {
+        "accountId": "9999999999",
+        "containerId": "99999999",
+        "tagId": "2",
+        "name": "Tag 2",
+        "type": "html",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "Tag body"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "supportDocumentWrite",
+            "value": "false"
+          }
+        ],
+        "fingerprint": "1500000000000",
+        "firingTriggerId": ["12", "13"],
+        "tagFiringOption": "ONCE_PER_EVENT"
+      },
+      {
+        "accountId": "9999999999",
+        "containerId": "99999999",
+        "tagId": "3",
+        "name": "Tag 3",
+        "type": "html",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "Tag body"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "supportDocumentWrite",
+            "value": "false"
+          }
+        ],
+        "fingerprint": "1500000000000",
+        "firingTriggerId": ["13", "14", "15"],
+        "tagFiringOption": "ONCE_PER_EVENT"
+      },
+      {
+        "accountId": "9999999999",
+        "containerId": "99999999",
+        "tagId": "4",
+        "name": "Tag 4",
+        "type": "html",
+        "parameter": [
+          {
+            "type": "TEMPLATE",
+            "key": "html",
+            "value": "Tag body"
+          },
+          {
+            "type": "BOOLEAN",
+            "key": "supportDocumentWrite",
+            "value": "false"
+          }
+        ],
+        "fingerprint": "1500000000000",
+        "firingTriggerId": [],
+        "tagFiringOption": "ONCE_PER_EVENT"
+      }
+    ],
+    "trigger": [
+      {
+        "accountId": "9999999999",
+        "containerId": "99999999",
+        "triggerId": "10",
+        "name": "Trigger 10",
+        "type": "WINDOW_LOADED",
+        "filter": [
+          {
+            "type": "STARTS_WITH",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{Page URL}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "https://example.com/foo"
+              }
+            ]
+          }
+        ],
+        "fingerprint": "1500000000000"
+      },
+      {
+        "accountId": "9999999999",
+        "containerId": "99999999",
+        "triggerId": "11",
+        "name": "Trigger 11",
+        "type": "WINDOW_LOADED",
+        "filter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{Page URL}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "https://example.com/foo"
+              }
+            ]
+          }
+        ],
+        "fingerprint": "1500000000000"
+      },
+      {
+        "accountId": "9999999999",
+        "containerId": "99999999",
+        "triggerId": "12",
+        "name": "Trigger 12",
+        "type": "WINDOW_LOADED",
+        "filter": [
+          {
+            "type": "STARTS_WITH",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{Page URL}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "https://example.com/bar"
+              }
+            ]
+          }
+        ],
+        "fingerprint": "1500000000000"
+      },
+      {
+        "accountId": "9999999999",
+        "containerId": "99999999",
+        "triggerId": "13",
+        "name": "Trigger 13",
+        "type": "WINDOW_LOADED",
+        "filter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{Page URL}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "https://example.com/bar"
+              }
+            ]
+          }
+        ],
+        "fingerprint": "1500000000000"
+      },
+      {
+        "accountId": "9999999999",
+        "containerId": "99999999",
+        "triggerId": "14",
+        "name": "Trigger 14",
+        "type": "DOM_READY",
+        "filter": [
+          {
+            "type": "CONTAINS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{ID 要素}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "foo"
+              }
+            ]
+          }
+        ],
+        "fingerprint": "1500000000000"
+      },
+      {
+        "accountId": "9999999999",
+        "containerId": "99999999",
+        "triggerId": "15",
+        "name": "Trigger 15",
+        "type": "DOM_READY",
+        "filter": [
+          {
+            "type": "CONTAINS",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{ID 要素}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "bar"
+              }
+            ]
+          }
+        ],
+        "fingerprint": "1500000000000"
+      }
+    ],
+    "variable": [],
+    "builtInVariable": [
+      {
+        "accountId": "9999999999",
+        "containerId": "99999999",
+        "type": "PAGE_URL",
+        "name": "Page URL"
+      },
+      {
+        "accountId": "9999999999",
+        "containerId": "99999999",
+        "type": "PAGE_HOSTNAME",
+        "name": "Page Hostname"
+      },
+      {
+        "accountId": "9999999999",
+        "containerId": "99999999",
+        "type": "PAGE_PATH",
+        "name": "Page Path"
+      },
+      {
+        "accountId": "9999999999",
+        "containerId": "99999999",
+        "type": "REFERRER",
+        "name": "Referrer"
+      },
+      {
+        "accountId": "9999999999",
+        "containerId": "99999999",
+        "type": "EVENT",
+        "name": "Event"
+      }
+    ],
+    "fingerprint": "0",
+    "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/9999999999/containers/99999999/versions/0?apiLink=version"
+  }
+}
