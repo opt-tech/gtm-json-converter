@@ -1,5 +1,8 @@
 # GTM JSON Converter
 
+[![CircleCI](https://circleci.com/gh/opt-tech/gtm-json-converter.svg?style=shield)](https://circleci.com/gh/opt-tech/gtm-json-converter)
+[![npm](https://img.shields.io/npm/v/@opt-tech/gtm-json-converter.svg)](https://www.npmjs.com/package/@opt-tech/gtm-json-converter)
+
 Google Tag Manager がエクスポートした JSON をエクセルで開ける CSV に変換します
 
 1 行に 1 つのタグ、列は以下を出力します
