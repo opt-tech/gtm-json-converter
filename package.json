@@ -9,6 +9,10 @@
   "bugs": {
     "url": "https://github.com/opt-tech/gtm-json-converter/issues"
   },
+  "dependencies": {
+    "dayjs": "1.8.14",
+    "sanitize-filename": "1.6.1"
+  },
   "devDependencies": {
     "nodemon": "1.19.0",
     "prettier": "1.17.1",
