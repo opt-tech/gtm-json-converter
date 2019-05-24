@@ -10,9 +10,9 @@
     "url": "https://github.com/opt-tech/gtm-json-converter/issues"
   },
   "devDependencies": {
-    "nodemon": "1.18.10",
-    "prettier": "1.16.4",
-    "prettier-plugin-packagejson": "1.0.0"
+    "nodemon": "1.19.0",
+    "prettier": "1.17.1",
+    "prettier-plugin-packagejson": "1.0.2"
   },
   "directories": {
     "lib": "lib",
