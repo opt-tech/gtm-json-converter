@@ -10,7 +10,7 @@
     "url": "https://github.com/opt-tech/gtm-json-converter/issues"
   },
   "dependencies": {
-    "dayjs": "1.8.14",
+    "dayjs": "1.8.16",
     "sanitize-filename": "1.6.3"
   },
   "devDependencies": {
