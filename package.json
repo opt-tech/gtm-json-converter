@@ -1,13 +1,43 @@
 {
   "name": "@opt-tech/gtm-json-converter",
-  "description": "Google Tag Manager がエクスポートした JSON をエクセルで開ける CSV に変換します",
   "version": "0.0.0-development",
+  "description": "Google Tag Manager がエクスポートした JSON をエクセルで開ける CSV に変換します",
+  "keywords": [
+    "converter",
+    "csv",
+    "excel",
+    "gtm",
+    "json"
+  ],
+  "homepage": "https://github.com/opt-tech/gtm-json-converter#readme",
+  "bugs": {
+    "url": "https://github.com/opt-tech/gtm-json-converter/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/opt-tech/gtm-json-converter.git"
+  },
   "license": "MIT",
+  "files": [
+    "bin",
+    "lib"
+  ],
+  "main": "lib",
   "bin": {
     "gtm-json-converter": "bin/index.js"
   },
-  "bugs": {
-    "url": "https://github.com/opt-tech/gtm-json-converter/issues"
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "dev": "nodemon test",
+    "format": "npm run prettier-base -- --write",
+    "lint": "npm run prettier-base -- -c",
+    "prettier-base": "prettier --ignore-path .gitignore \"**/*.{js,json,md}\"",
+    "start": "node bin",
+    "pretest": "npm run lint",
+    "test": "node test"
   },
   "dependencies": {
     "dayjs": "1.8.16",
@@ -18,41 +48,11 @@
     "prettier": "1.18.2",
     "prettier-plugin-packagejson": "2.0.1"
   },
-  "directories": {
-    "lib": "lib",
-    "test": "test"
-  },
   "engines": {
     "node": ">= 10",
     "npm": ">= 6.4"
   },
-  "files": [
-    "bin",
-    "lib"
-  ],
-  "homepage": "https://github.com/opt-tech/gtm-json-converter#readme",
-  "keywords": [
-    "converter",
-    "csv",
-    "excel",
-    "gtm",
-    "json"
-  ],
-  "main": "lib",
   "publishConfig": {
     "access": "public"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/opt-tech/gtm-json-converter.git"
-  },
-  "scripts": {
-    "prettier-base": "prettier --ignore-path .gitignore \"**/*.{js,json,md}\"",
-    "lint": "npm run prettier-base -- -c",
-    "format": "npm run prettier-base -- --write",
-    "dev": "nodemon test",
-    "pretest": "npm run lint",
-    "test": "node test",
-    "start": "node bin"
   }
 }
