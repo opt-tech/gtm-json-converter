@@ -45,7 +45,7 @@
   },
   "devDependencies": {
     "nodemon": "1.19.4",
-    "prettier": "1.19.1",
+    "prettier": "2.0.1",
     "prettier-plugin-packagejson": "2.0.10"
   },
   "engines": {
