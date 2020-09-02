@@ -40,7 +40,7 @@
     "test": "node test"
   },
   "dependencies": {
-    "dayjs": "1.8.34",
+    "dayjs": "1.8.35",
     "sanitize-filename": "1.6.3"
   },
   "devDependencies": {
